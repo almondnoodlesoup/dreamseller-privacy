@@ -4,6 +4,7 @@
   ✅ 자리표시자 전부 치환 완료 (남은 것 0개)
      ✅ {{APP_NAME}} → Dream Seller 치환 완료 (2026-10-12, ko/en 공통 — 로고 이미지와 일치)
      ✅ {{EFFECTIVE_DATE}} → 2026-10-13 치환 완료 (사용자 2026-10-13: 출시일 아닌 «업로드하는 날». 심사 전에 URL이 열려 있어야 하고 출시일은 심사에 따라 밀린다)
+     ♻️ 2026-11-21 개정: 광고 vendor LevelPlay 전환 → §2 서비스 표와 수집 항목, §6 보유 기간, 시행일 2026-11-21 (Ads-Integration.md §10.7)
   ＊영어판 = privacy-en.html. 고칠 때 양쪽을 같이 고칠 것.
 -->
 <html lang="ko">
@@ -69,7 +70,7 @@
 <h1>개인정보처리방침</h1>
 <p class="meta">
   <strong>Dream Seller</strong> (이하 &ldquo;본 앱&rdquo;)<br>
-  시행일: 2026년 10월 13일
+  시행일: 2026년 11월 21일
 </p>
 
 <p>
@@ -90,27 +91,37 @@
 
 <h2>2. 광고를 통해 수집되는 정보</h2>
 <p>
-  본 앱은 광고를 제공하기 위해 Google에서 제공하는 <strong>Google AdMob</strong>을 사용합니다.
+  본 앱은 광고를 제공하기 위해 아래 서비스를 사용합니다.
   광고는 이용자가 원할 때만 보는 선택 기능이며, 보지 않아도 게임을 끝까지 진행할 수 있습니다.
 </p>
+<table>
+  <tr><th>서비스</th><th>역할</th></tr>
+  <tr><td>Unity LevelPlay</td><td>여러 광고 네트워크 가운데 광고를 골라 보여 주는 광고 중개 서비스</td></tr>
+  <tr><td>Unity Ads, ironSource</td><td>광고를 제공하는 광고 네트워크</td></tr>
+  <tr><td>Google (Google AdMob 등)</td><td>광고 동의 관리, 광고 네트워크</td></tr>
+</table>
 <p>
-  광고가 제공되는 과정에서 Google 및 그 협력사는 아래와 같은 정보를 수집하거나 이용할 수 있습니다.
+  광고가 제공되는 과정에서 위 회사들과 그 협력사는 아래와 같은 정보를 수집하거나 이용할 수 있습니다.
   이 정보는 개발자에게 전달되지 않으며, 개발자는 이를 열람하거나 보관하지 않습니다.
 </p>
 <table>
   <tr><th>항목</th><th>설명</th></tr>
   <tr><td>광고 식별자</td><td>기기에 부여된 광고용 식별자(iOS의 IDFA 등)</td></tr>
-  <tr><td>IP 주소</td><td>대략적인 위치를 파악하는 데 쓰일 수 있습니다</td></tr>
+  <tr><td>설치 식별자</td><td>앱 설치에 부여되는 식별자</td></tr>
+  <tr><td>IP 주소와 대략적인 위치</td><td>IP 주소 등으로 파악한 대략적인 위치 (정확한 위치는 수집하지 않습니다)</td></tr>
   <tr><td>기기 정보</td><td>기기 종류, 운영체제 버전, 언어 설정 등</td></tr>
-  <tr><td>광고 상호작용</td><td>광고가 표시된 횟수, 클릭 여부 등</td></tr>
+  <tr><td>광고 상호작용</td><td>광고가 표시된 횟수, 광고 화면 안에서의 조작, 클릭 여부 등</td></tr>
+  <tr><td>앱 이용 정보</td><td>앱을 이용한 시간 등 광고 품질과 효과를 측정하는 데 쓰이는 정보</td></tr>
+  <tr><td>구매 기록</td><td>앱 안의 구매 기록 (본 앱에는 유료 결제가 없습니다)</td></tr>
   <tr><td>진단 정보</td><td>오류 및 성능에 관한 기술적 기록</td></tr>
 </table>
 <p>
-  Google이 정보를 다루는 방식은 아래에서 확인하실 수 있습니다.
+  각 회사가 정보를 다루는 방식은 아래에서 확인하실 수 있습니다.
 </p>
 <ul>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
   <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google의 파트너 사이트 및 앱 데이터 이용 안내</a></li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity 게임 플레이어 및 앱 이용자 개인정보처리방침 (Unity LevelPlay, Unity Ads, ironSource)</a></li>
 </ul>
 
 <h2>3. 추적 권한 요청 (iOS)</h2>
@@ -144,7 +155,7 @@
 <p>
   개발자가 보관하는 이용자 정보가 없으므로 별도의 보유 기간이나 파기 절차가 없습니다.
   기기에 저장된 게임 기록은 앱을 삭제하시면 함께 지워집니다.
-  광고 제공 과정에서 Google이 보유하는 정보의 기간과 처리 방식은 위 2항의 Google 개인정보처리방침을 따릅니다.
+  광고 제공 과정에서 각 회사가 보유하는 정보의 기간과 처리 방식은 위 2항에 연결된 각 회사의 개인정보처리방침을 따릅니다.
 </p>
 
 <h2>7. 이용자의 권리</h2>

@@ -4,6 +4,7 @@
   ✅ 자리표시자 전부 치환 완료 (남은 것 0개)
      ✅ {{APP_NAME}} → Dream Seller 치환 완료 (2026-10-12, ko/en 공통 — 로고 이미지와 일치)
      ✅ {{EFFECTIVE_DATE}} → 2026-10-13 치환 완료 (사용자 2026-10-13: 출시일 아닌 «업로드하는 날». 심사 전에 URL이 열려 있어야 하고 출시일은 심사에 따라 밀린다)
+     ♻️ 2026-11-21 개정: 광고 vendor LevelPlay 전환 → §2 서비스 표와 수집 항목, §6 보유 기간, 시행일 2026-11-21 (Ads-Integration.md §10.7)
   ＊한국어판 = privacy.html. 고칠 때 양쪽을 같이 고칠 것.
 -->
 <html lang="en">
@@ -69,7 +70,7 @@
 <h1>Privacy Policy</h1>
 <p class="meta">
   <strong>Dream Seller</strong> (the &ldquo;App&rdquo;)<br>
-  Effective date: October 13, 2026
+  Effective date: November 21, 2026
 </p>
 
 <p>
@@ -90,27 +91,37 @@
 
 <h2>2. Information collected through advertising</h2>
 <p>
-  The App uses <strong>Google AdMob</strong> to show ads.
+  The App uses the services below to show ads.
   Ads are optional rewards that you choose to watch, and the game can be played all the way through without watching any.
 </p>
+<table>
+  <tr><th>Service</th><th>Role</th></tr>
+  <tr><td>Unity LevelPlay</td><td>Ad mediation: chooses which ad network's ad to show</td></tr>
+  <tr><td>Unity Ads, ironSource</td><td>Ad networks that supply the ads</td></tr>
+  <tr><td>Google (Google AdMob and others)</td><td>Ad consent management and ad network</td></tr>
+</table>
 <p>
-  While serving ads, Google and its partners may collect or use the following information.
+  While serving ads, these companies and their partners may collect or use the following information.
   None of it is passed to the Developer, who neither views nor stores it.
 </p>
 <table>
   <tr><th>Item</th><th>Description</th></tr>
   <tr><td>Advertising identifier</td><td>The identifier your device assigns for advertising (IDFA on iOS, for example)</td></tr>
-  <tr><td>IP address</td><td>May be used to determine an approximate location</td></tr>
+  <tr><td>Installation identifier</td><td>An identifier assigned to your installation of the App</td></tr>
+  <tr><td>IP address and approximate location</td><td>An approximate location worked out from your IP address and similar signals (precise location is not collected)</td></tr>
   <tr><td>Device information</td><td>Device model, operating system version, language settings, and similar details</td></tr>
-  <tr><td>Ad interactions</td><td>How often an ad was shown, whether it was tapped, and so on</td></tr>
+  <tr><td>Ad interactions</td><td>How often an ad was shown, what you did inside the ad, whether it was tapped, and so on</td></tr>
+  <tr><td>App usage</td><td>How long the App is used and similar information used to measure ad quality and effectiveness</td></tr>
+  <tr><td>Purchase history</td><td>Purchases made in the App (the App has no paid purchases)</td></tr>
   <tr><td>Diagnostics</td><td>Technical records relating to errors and performance</td></tr>
 </table>
 <p>
-  You can read how Google handles this information here:
+  You can read how each company handles this information here:
 </p>
 <ul>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
   <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a></li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity Game Player and App User Privacy Policy (Unity LevelPlay, Unity Ads, ironSource)</a></li>
 </ul>
 
 <h2>3. Tracking permission (iOS)</h2>
@@ -144,7 +155,7 @@
 <p>
   Because the Developer holds no user information, there is no retention period and no deletion procedure to follow.
   Game data saved on your device is removed when you delete the App.
-  Information held by Google in the course of serving ads is governed by the Google Privacy Policy linked in section 2.
+  Information held by each company in the course of serving ads is governed by that company's privacy policy linked in section 2.
 </p>
 
 <h2>7. Your rights</h2>
